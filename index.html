@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calulator</title>
+</head>
+
+<body>
+    <div class="overall">
+     <input type="text" id="cal" placeholder="0">
+    <div class="b1">
+        <div><button  id="btn0"  onclick="cal1()">AC</button class="btn1"></div>
+        <div><button id="btn0" onclick="cal2()">**</button class="btn1"></div>
+        <div><button id="btna" onclick="cal3()">%</button class="btn1"></div>
+        <div><button class="btn4" onclick="cal4()">÷</button class="btn1"></div>
+    </div>
+    <div class="b1">
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal5()">7</button class="btn1"></div>
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal6()">8</button class="btn1"></div>
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal7()">9</button class="btn1"></div>
+        <div><button class="btn8" onclick="cal8()">x</button class="btn1"></div>
+    </div>
+    <div class="b1">
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal9()">4</button class="btn1"></div>
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal10()">5</button class="btn1"></div>
+        <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal11()">6</button class="btn1"></div>
+        <div><button class="btn12" onclick="cal12()">+</button class="btn1"></div>
+    </div>
+    <div class="b1">
+            <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cal()">1</button></div>
+            <div><button style="background-color: rgb(36, 35, 35); color: white;" onclick="cala()">2</button></div>
+            <div><button style="background-color: rgb(36, 35, 35); color: white; " onclick="cala1()">3</button></div>
+            <div><button id="i1" style="background-color: goldenrod; color: rgb(0, 0, 0); font-size: 30px;" onclick="cala2()">-</button></div>
+    </div>
+    <div class="b1">
+        <div><button id="btn17" style="background-color: rgb(36, 35, 35); color: white;" onclick="cal13()">0</button class="btn1"></div>
+        <!-- <button class="btn1" onclick="document.getElementById('cal').value +='8'">8</button class="btn1"> -->
+        <div><button  style="background-color: rgb(36, 35, 35); color: white;" onclick="cal14">.</button class="btn1"></div>
+       <div> <button style="background-color: goldenrod; color: rgb(0, 0, 0); font-size: 25px;" onclick="cal15()">=</button class="btn1"></div>
+        <!-- <button class="btn1" onclick="cal()">1</button class="btn1"> -->
+    </div>
+    </div>
+
+    <script>
+        function cal() {
+            document.getElementById('cal').value += "1"
+        }
+        function cala() {
+            document.getElementById('cal').value += "2"
+        }
+        function cala1() {
+            document.getElementById('cal').value += "3"
+        }
+        function cala2() {
+            document.getElementById('cal').value += "-"
+        }
+
+        function cal1() {
+            document.getElementById('cal').value=document.getElementById('cal').value.slice(0, document.getElementById('cal').value.length -1)
+        }
+        function cal2() {
+            document.getElementById('cal').value += "**"
+        }
+        function cal3() {
+            document.getElementById('cal').value += "%"
+        }
+        function cal4() {
+            document.getElementById('cal').value += "/"
+        }
+
+
+        function cal5() {
+            document.getElementById('cal').value += "7"
+        }
+        function cal6() {
+            document.getElementById('cal').value += "8"
+        }
+        function cal7() {
+            document.getElementById('cal').value += "9"
+        }
+        function cal8() {
+            document.getElementById('cal').value += "*"
+        }
+
+
+        function cal9() {
+            document.getElementById('cal').value += "4"
+        }
+        function cal10() {
+            document.getElementById('cal').value += "5"
+        }
+        function cal11() {
+            document.getElementById('cal').value += "6"
+        }
+        function cal12() {
+            document.getElementById('cal').value += "+"
+        }
+
+        function cal13() {
+            document.getElementById('cal').value += "0"
+        }
+        function cal14() {
+            document.getElementById('cal').value += "."
+        }
+        function cal15() {
+            document.getElementById('cal').value= eval(document.getElementById('cal').value )
+        }
+
+
+
+    </script>
+
+
+  
+</body>
+</html>

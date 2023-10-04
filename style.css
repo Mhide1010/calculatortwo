@@ -1,0 +1,82 @@
+:root{
+    background-color: rgb(135, 137, 138);
+}
+    .overall{
+       /* text-align: center; */
+       position: relative;
+       top: 90px;
+       padding: 80px 10px;
+       background-color: rgb(0, 0, 0);
+       border-radius: 50px;
+       max-width: 300px;
+       margin: auto;
+       text-align: center;
+       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    input::placeholder{
+        font-size: 25px;
+        color: white;
+    }
+    .head{
+        font-size: 50px;
+    }
+    #cal{
+        padding-top: 20px ;
+        /* padding-right:5px ; */
+
+        outline: none;
+        font-size: 23px;
+        color: white;
+        border: none;
+        background-color: transparent;
+    }
+    .b1{
+        /* margin: 15px; */
+        position: relative;
+        top: 50px;
+        display: flex;
+        margin: 15px;
+        justify-content: space-evenly;
+    }
+    .b1 button{
+        /* margin: 0px 80px; */
+        padding: 14px 22px;
+        border-radius: 100%;
+        height: 52px;
+        border: none;
+        width: 100%;
+        font-size: 20px;
+    }
+     #btn0{
+        padding: 13px;
+        width: 100%;
+        background-color: gainsboro;
+        /* margin-bottom: 12px; */
+    }
+    #btna{
+        padding: 18px;
+        width: 100%;
+        background-color: gainsboro;
+        /* margin-bottom: 12px; */
+    }
+    #btn17{
+        padding-right: 95px;
+        border-radius: 50px;
+    }
+
+    .btn4 {
+      background-color: goldenrod;
+      font-size: 30px
+    }
+    .btn8{
+        background-color: goldenrod;
+        font-size: 30px
+    }
+    .btn12{
+        background-color: goldenrod;
+        font-size: 30px
+    }
+    .btn16{
+        background-color: goldenrod;
+        font-size: 30px
+    }
